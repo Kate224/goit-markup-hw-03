@@ -103,12 +103,10 @@ button {
 /* navigation */
 .site-nav .link {
 	display: block;
-	padding-top: 20px;
-	padding-bottom: 20px;
 
 	color: var(--Headings);
 	font-weight: 500;
-	font-size: 18px;
+	font-size: 16px;
 	line-height: 1.33;
 	letter-spacing: 0.02em;
 }
@@ -213,6 +211,9 @@ button {
 .features.list {
 	display: flex;
 }
+.features.list > li {
+	width: 264px;
+}
 .features.list li + li {
 	margin-left: 24px;
 	min-width: 264px;
@@ -261,6 +262,8 @@ button {
 /* footer */
 .footer {
 	background-color: var(--Headings);
+	padding-top: 100px;
+	padding-bottom: 100px;
 }
 .logo.link.footer {
 	color: var(--background-secondary);
@@ -268,18 +271,19 @@ button {
 }
 .footer-p {
 	margin-top: 16px;
+	line-height: 1.5;
 
 	color: var(--Accent);
 	letter-spacing: 0.02em;
 	width: 264px;
 }
-.footer.container {
-	padding-top: 100px;
-	padding-bottom: 100px;
-}
+
 
 
 /* page protfolio */
+.portfolio.section {
+	padding-top: 96px;
+}
 .filter-menu [type="button"] {
 	text-align: center;
 	display: block;
@@ -304,10 +308,9 @@ color: var(--background-primary);
 }
 .filter-menu.list {
 	margin-bottom: 72px;
-	padding-top: 96px;
 }
 .portfolio.section {
-	padding-top: 0px;
+	padding-top: 96px;
 }
 
 .portfolio-text {
