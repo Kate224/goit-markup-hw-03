@@ -35,8 +35,7 @@ img {
 .list {
 	list-style: none;
 	padding: 0;
-	margin: 0;
-	justify-content: center;
+	margin: 0 auto;
 }
 button {
 	font-family: inherit;
@@ -59,8 +58,7 @@ button {
 	margin-left: auto;
 	margin-right: auto;
 
-	padding-left: 12px;
-	padding-right: 12px;
+	padding: 0 15px;
 	/* outline: 1px solid tomato; */
 }
 .section {
@@ -276,8 +274,6 @@ button {
 	width: 264px;
 }
 
-
-
 /* page protfolio */
 .portfolio.section {
 	padding-top: 96px;
@@ -301,18 +297,15 @@ button {
 	background-color: #404BBF;
 color: var(--background-primary);
 }
-.filter-menu li + li {
-	margin-left: 24px;
-}
-.filter-menu.list {
-	margin-bottom: 72px;
-}
 .filter-menu.list {
 	display: flex;
 	flex-wrap: wrap;
+	margin-bottom: 72px;
 	justify-content: center;
 }
-
+.filter-menu li + li {
+	margin-left: 24px;
+}
 /* PORTFOLIO */
 
 .portfolio-text {
@@ -320,6 +313,7 @@ color: var(--background-primary);
 
 	color: var(--body-text);
 	letter-spacing: 0.02em;
+	line-height: 1.5;
 }
 .portfolio-list {
 	display: flex;
@@ -329,6 +323,7 @@ color: var(--background-primary);
 }
 
 .portfolio-item {
+		flex-basis: calc((100% - 3 * 24px ) / 3);
 	margin-right: 24px;
 	margin-bottom: 48px;
 }
@@ -341,13 +336,14 @@ color: var(--background-primary);
 /* card */
 .card-portfolio {
 	overflow: hidden;
-	width: 360px;
+	border-top: none;
+
 	background: #FFFFFF;
 }
 .content-card {
 	border: 1px solid #E7E9FC;
 	border-top: none;
-	width: 360px;
+	/* width: 360px; */
 	padding-top: 32px;
 	padding-left: 16px;
 	padding-bottom: 32px;
